@@ -17,3 +17,13 @@ print(L5)
 
 L6 = [d for d in os.listdir(".")]
 print(L6)
+
+d = {'x': 'A', 'y': 'B', 'z': 'C' }
+L7 = [k + "=" + v for k, v in d.items()]
+print(L7)
+
+print([x.lower() for x in L5])
+
+test1 = ['Hello', 'World', 18, 'Apple', None]
+test2 = [x.lower() for x in test1 if isinstance(x, str)]
+print(test2)
